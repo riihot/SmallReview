@@ -1,7 +1,7 @@
 public class Presentation {
     private String name;
     private static final String url = "https://sniplink.xyz/SKVXpI";
-    private static final String text = "это был меленький Рик Ролл";
+    private static final String text = "это был маленький РикРолл";
 
     public Presentation(String name) {
         this.name = name;

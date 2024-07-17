@@ -7,6 +7,7 @@ import java.net.URISyntaxException;
 
 public class Main {
     public static void main(String[] args) {
+        //сделал за 20 минут,чтобы репозиторий не пустовал
         System.out.println("Просто маленькая презентация,как вас зовут?");
         System.out.print("Меня зовут: ");
         Scanner sc = new Scanner(System.in);
