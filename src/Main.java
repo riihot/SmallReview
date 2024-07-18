@@ -20,12 +20,14 @@ public class Main {
             pres = new Presentation();
         }
         try{
+            System.out.println(pres.getName()+ " "  + pres.getText());
+            Thread.sleep(2000);
             if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
                 Desktop.getDesktop().browse(new URI(pres.getUrl()));
             }
-        } catch (IOException | URISyntaxException e) {
+        } catch (IOException | URISyntaxException | InterruptedException e) {
             throw new RuntimeException(e);
         }
-        System.out.println(pres.getName()+ " "  + pres.getText());
+
     }
 }
